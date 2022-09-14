@@ -800,12 +800,35 @@ button {
   fill: var(--logo-color-tail);
 }
 
-
 .call-back-form .input:focus + .input-ico,
 .call-back-form .input:hover + .input-ico {
   fill: var(--accent-color);
 }
 
+.call-back-txt {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.call-back-txt::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.call-back-form .call-back-txt:focus,
+.call-back-form .call-back-txt:hover {
+  border: 1px solid var(--accent-color);
+  outline: transparent;
+}
 
 /* ==================== СТОРІНКА ПОРТФОЛІО =================================== */
 /* Стилізуємо портфоліо */
