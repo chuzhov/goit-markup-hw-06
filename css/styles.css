@@ -331,6 +331,43 @@ button {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.footer-btn {
+  padding: 10px 28px;
+  min-width: 200px;
+  height: 50px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: calc(30px / 16px);
+  letter-spacing: 0.06em;
+  text-align: left;
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+  color: var(--logo-color-contrast);
+
+  cursor: pointer;
+}
+
+.wrapper-btn {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.wrapper-btn .button-icon {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  fill: var(--logo-color-contrast)
+}
+
 /* Назва секції - невідима */
 /* sec 2 Скриваємо логічний заголовок секції, якого немає на екрані */
 .hidden-header {
@@ -584,6 +621,7 @@ button {
 /* Футер блок: приєднуйся до нас в соц.мережах */
 
 .footer-follow-us {
+  width: fit-content;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -617,16 +655,30 @@ button {
   padding: 15px 16px;
 
   font-size: 16px;
-  line-height: calc(20px / 16px);
-  /* identical to box height, or 125% */
+  line-height: 1.25;
   letter-spacing: 0.03em;
 
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--logo-color-contrast);
   background-color: var(--footer-color);
+
+  transition: border-color 250ms var(--time-function);
+}
+
+.footer-subscribe-us-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe-us-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.footer-subscribe-us-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(70, 8, 11, 0.60);
 }
 
 /* Бекдроп та модальне вікно */
@@ -656,6 +708,7 @@ button {
 
   width: 528px;
   min-height: 581px;
+  padding: 40px;
 
   background-color: var(--logo-color-contrast);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -688,6 +741,69 @@ button {
 }
 .close-button svg {
   fill: currentcolor;
+}
+
+.modal-header {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.call-back-form-field {
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17px;
+  letter-spacing: 0.01em;
+
+  color: var(--article-text-color);
+}
+
+.call-back-form .input-wrap {
+  position: relative;
+}
+
+.call-back-form .input {
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  background-color: transparent;
+}
+
+.call-back-form .input:focus,
+.call-back-form .input:hover {
+  border: 1px solid var(--accent-color);
+  outline: transparent;
+}
+
+.call-back-form .input-ico {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  fill: var(--logo-color-tail);
+}
+
+
+.call-back-form .input:focus + .input-ico,
+.call-back-form .input:hover + .input-ico {
+  fill: var(--accent-color);
 }
 
 
