@@ -830,6 +830,30 @@ button {
   outline: transparent;
 }
 
+.call-back-form .call-back-form-field:last-of-type {
+  margin-bottom: 29px;
+}
+
+.call-back-form-legal {
+  /* font-size: 14px; */
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: var(--article-text-color);
+}
+
+.legal-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  
+  color: var(--accent-color)
+  
+}
+
 /* ==================== СТОРІНКА ПОРТФОЛІО =================================== */
 /* Стилізуємо портфоліо */
 
