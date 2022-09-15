@@ -539,8 +539,8 @@
               placeholder="E-mail"
               required
             >
-            <div class="wrapper-btn"> 
-              <button type="submit" class="submit-btn left-txt">
+            <div class="wrapper-footer-btn"> 
+              <button type="submit" class="footer-submit-btn">
                 Підписатися
                 <span>
                   <svg class="button-icon" width="24" height="24">
@@ -625,21 +625,26 @@
             <textarea   class="call-back-txt" 
                         name="call-back-form-txt" 
                         id="call-back-form-txt" 
+                        rows="7"
                         placeholder="Введіть текст"></textarea>
         </div>
 
         <input  type="checkbox"
                 name="call-back-form-legal"
                 id="call-back-form-legal"
-                value=""
-                class="">
-        <label for="call-back-form-legal">
+                value="not"
+                class="modal-check-box visually-hidden">
+        <svg class="check-box-ico" width="16" height="15">
+          <use class="legal-unchecked" href="images/icons.svg#check-box"></use>
+          <use class="legal-checked" href="images/icons.svg#checkmark"></use>
+        </svg>
+        <label for="call-back-form-legal" class="legal-label">
             Погоджуюся з розсилкою та приймаю
             <a class="legal-link" href="https://www.penguinrandomhouse.com/articles/so-you-want-to-make-a-deal-with-the-devil/" rel="nofollow noopener noreferrer"  target="_blank">Умови договору</a>
         </label>
-        <button type="submit" class="submit-btn center-txt">Відправити</button>
+        <!--  Кнопка Submit  -->
+        <button type="submit" class="modal-submit-btn">Відправити</button>
         
-
       </form>
     </div>
 
