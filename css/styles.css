@@ -774,8 +774,11 @@ button {
   color: var(--title-text-color);
 }
 
-.call-back-form-field {
+.call-back-form-field:not(:last-of-type) {
   margin-bottom: 10px;
+}
+.call-back-form-field:last-of-type {
+  margin-bottom: 20px;
 }
 
 .modal-label {
@@ -848,22 +851,26 @@ button {
   outline: transparent;
 }
 
-.check-box-ico {
+.legal-label {
   
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .call-back-form-legal {
-  /* margin-bottom: 30px; */
-
+  
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 
   color: var(--article-text-color);
 }
 
-.legal-label {
-  cursor: pointer;
-  user-select: none;
+.check-box-ico {
+  position: absolute;
+  top: 442px;
+  left: 54px;
+  pointer-events: all;
 }
 
 .legal-link {
@@ -880,9 +887,11 @@ button {
 
 .legal-checked {
   opacity: 0;
+  transition: opacity 250ms var(--time-function);
 }
 .legal-unchecked {
   opacity: 1;
+  
 }
 
 .modal-check-box:checked + * .legal-checked {
