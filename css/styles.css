@@ -648,6 +648,12 @@ button {
   outline: transparent;
 }
 
+/* --  Блок підписки  -- */
+.footer-input-wrapper {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
 .footer-subscribe-us-input {
   width: 358px;
   height: 50px;
