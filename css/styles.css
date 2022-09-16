@@ -904,7 +904,7 @@ button {
 .modal-submit-btn {
   display: block;
   padding: 10px 28px;
-  margin: 30px auto 40px auto;
+  margin: 30px auto 0 auto;
   min-width: 200px;
   height: 50px;
 
